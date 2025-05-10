@@ -1,0 +1,26 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+body div {
+    padding: 8px;
+    display: flex;
+}
+nav {
+    margin: 0 180px;
+    font-size: 22px;
+    box-sizing:  border-box;
+    font-family: 'Pacifico', cursive;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.search {
+    align-items: center;
+    display: flex;
+}
