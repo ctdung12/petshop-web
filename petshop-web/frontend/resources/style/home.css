@@ -7,7 +7,7 @@
 
 .header {
    background-color: rgb(55, 55, 185);
-   padding: 20px 30px 20px 100px;
+   padding: 33px 30px 20px 100px;
    display: flex;
    height: 140px;
    flex-direction: column;
@@ -15,15 +15,15 @@
 }
 
 .headerFrame1 {
+    gap: 20px;
     display: flex; 
     height: 50px; 
-    width: 100%;
+    width: 95%;
      justify-content: space-between;
 }
 
 .headerFrame1 img {
-    width: 130px;
-    margin-right: 100px;
+    width: 150px;
 }
 
 .headerFrame1 input {
@@ -33,9 +33,9 @@
 }
 
 .hotline {
+    text-align: center;
     font-weight: bolder;
     color: white;
-    margin-left: 40px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -43,33 +43,49 @@
 
 
 .cacdvukhac {
+    text-align: center;
     margin-top: -5px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;  
-    width: 80px;
+    width: 50px;
     height: 50px;
     row-gap: 8px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
-
+.cacdvukhac p {
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .cacdvukhac img {
-    margin-left: 8px;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
 }
-nav {
+.cacdvukhac a {
+    color: white;
+    text-decoration: none;
+}
+/* nav {
     margin: 0 180px;
     font-size: 22px;
     box-sizing:  border-box;
     font-family: 'Pacifico', cursive;
-    
+} */
+.menu {
+    padding: 6px;
+ justify-content: center;
+ display: flex;
+ font-size: 22px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 36px;
+    gap: 89px;
+    padding: 0;
+    margin: 0;
 }
 nav ul li a{
     color: white;
@@ -78,4 +94,24 @@ nav ul li a{
 .search {
     align-items: center;
     display: flex;
+}
+.search input {
+    height: 50px;
+    padding: 8px 0;
+}
+ .search input[type="text"] {
+    padding: 8px 15px;
+    font-size: 17px;
+    outline: none;
+    background-color: whitesmoke;
+}
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    
+}
+.search img {
+    width: 30px;
 }
