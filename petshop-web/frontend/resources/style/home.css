@@ -180,7 +180,7 @@
 .divbody {
     display: flex;
     width: 90%;
-    height: 1000px;
+    height: 1200px;
     justify-content: center;
      margin: 30px auto;
      gap: 20px;
@@ -215,8 +215,44 @@
     border: 1px solid rgb(137, 137, 142);
     padding: 5px 5px;
 }
+.productlist1 {
+     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    gap: 14px;
+}
 
+.productlist1child{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    flex: 1;
+    border-color: aliceblue;
+     overflow: hidden;
+}
+.productlist1child:hover{
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+.productlist1child img {
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     transition: transform 0.5s ease;
+}
 
+.productlist1child:hover img {
+    transform: scale(1.1); 
+}
+
+.productlist1child div {
+    flex: 1;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
 
 .Content {
     margin-top: 100px;
@@ -285,6 +321,11 @@
     height: 45px;
     margin-top: 30px;
     width: 100%;
+}
+.footchild1 input[type="text"] {
+    padding: 8px 15px;
+    outline: none;
+    font-size: 20px;
 }
 .footchild1 input {
     width: 80%;
