@@ -36,7 +36,7 @@ public class Smart {
     @Column(name = "date_add_smart", nullable = false)
     private LocalDateTime DateAddSmart;
 
-    private Smart() {
+    public Smart() {
     }
 
     public Long getIdSmart() {

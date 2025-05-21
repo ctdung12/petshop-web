@@ -40,7 +40,7 @@ public class Product {
     @CreationTimestamp
     private LocalDateTime DateAdd;
 
-    private Product() {
+    public Product() {
     }
 
     public Long getIdProduct() {

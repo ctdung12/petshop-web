@@ -19,7 +19,7 @@ public class Admin {
     @Column(name = "admin_pw", nullable = false)
     private String AdminPW;
 
-    private Admin() {
+    public Admin() {
     }
 
     public Long getIdAdmin() {
