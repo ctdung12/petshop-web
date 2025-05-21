@@ -24,30 +24,81 @@
             />
           </button>
         </div>
-        
+
         <div class="cacdvukhac">
-          <a href="wishlist.html">
+          <!-- <a href="wishlist.html">
             <img src="/petshop-web/frontend/resources/image/love.png" />
             <p>Wishlist</p>
-          </a>
+          </a> -->
+          <button class="btn" onclick="clickbtn()">
+            <img src="/petshop-web/frontend/resources/image/love.png" />
+            <p>Wishlist</p>
+          </button>
+          <script src="/petshop-web/frontend/resources/script/home.js"></script>
+          <div id="login-overlap" class="login-overlap hidden">
+            <div id="loginform" class="login-form">
+              <div class="login-content">
+                <span class="close-btn" onclick="clickbtn()">×</span>
+                <h3>Wishlist</h3>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Mật khẩu" required />
+                <button>Đăng Nhập</button>
+                <a href="#">Quên mật khẩu?</a>
+                <button class="register-btn">Tạo Tài Khoản</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="cacdvukhac">
-          <a href="login.html">
+          <button class="btn" onclick="clickbtn()">
             <img src="/petshop-web/frontend/resources/image/account.png" />
-            <p>Đăng Nhập</p>
-          </a>
+            <p>Đăng nhập</p>
+          </button>
+          <script src="/petshop-web/frontend/resources/script/home.js"></script>
+          <div id="login-overlap" class="login-overlap hidden">
+            <div id="loginform" class="login-form">
+              <div class="login-content">
+                <span class="close-btn" onclick="clickbtn()">×</span>
+                <h3>Đăng Nhập</h3>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Mật khẩu" required />
+                <button>Đăng Nhập</button>
+                <a href="#">Quên mật khẩu?</a>
+                <button class="register-btn">Tạo Tài Khoản</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="cacdvukhac">
-          <a href="cart.html">
+          <!-- <a href="cart.html">
             <img src="/petshop-web/frontend/resources/image/cart.png" />
             <p>Giỏ Hàng</p>
-          </a>
+          </a> -->
+          <button class="btn" onclick="clickbtn()">
+            <img src="/petshop-web/frontend/resources/image/cart.png" alt="*" />
+            <p>Giỏ hàng</p>
+          </button>
+          <script src="/petshop-web/frontend/resources/script/home.js"></script>
+          <div id="login-overlap" class="login-overlap hidden">
+            <div id="loginform" class="login-form">
+              <div class="login-content">
+                <span class="close-btn" onclick="clickbtn()">×</span>
+                <h3>Đăng Nhập</h3>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Mật khẩu" required />
+                <button>Đăng Nhập</button>
+                <a href="#">Quên mật khẩu?</a>
+                <button class="register-btn">Tạo Tài Khoản</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <nav class="menu">
         <ul>
-          <li><a href="">Chó</a>
+          <li>
+            <a href="">Chó</a>
             <div class="divmenu">
               <p>Chăm sóc vệ sinh cún</p>
               <p>Thức ăn cho chó</p>
@@ -58,9 +109,10 @@
               <p>Vận Chuyển</p>
             </div>
           </li>
-          <li><a href="">Mèo</a>
+          <li>
+            <a href="">Mèo</a>
             <div class="divmenu">
-                 <p>Thức ăn cho mèo</p>
+              <p>Thức ăn cho mèo</p>
               <p>Phụ Kiện và đồ chơi</p>
               <p>Chăm Sóc Sức Khỏe</p>
               <p>Vận Chuyển-Chuồng</p>
@@ -68,7 +120,8 @@
             </div>
           </li>
           <li><a href="">Hàng mới về</a></li>
-          <li><a href="">Thiết bị thông minh </a>
+          <li>
+            <a href="">Thiết bị thông minh </a>
             <div class="divmenu">
               <p>Máy ăn uống tự động</p>
               <p>Nhà vệ sinh tự động</p>
@@ -82,206 +135,283 @@
       </nav>
     </div>
 
-    <h2 class="title"> 
-       Hàng mới về
-    </h2>
+    <h2 class="title">Hàng mới về</h2>
 
-
-
-  <div class="divbody">
-       <div class="classify">
+    <div class="divbody">
+      <div class="classify">
         <p>LOẠI SẢN PHẨM</p>
-       </div>
-       <div class="productlist">
-          <div class="productlistchild">
-              <p>SẮP XẾP THEO</p>
-              <select>
-                <option>Ban chay nhat</option>
-                <option>Thu tu bang chu cai(A-Z)</option>
-                <option>Noi bat</option>
-                <option>Noi bat</option>
-              </select>
+      </div>
+      <div class="productlist">
+        <div class="productlistchild">
+          <p>SẮP XẾP THEO</p>
+          <select>
+            <option>Ban chay nhat</option>
+            <option>Thu tu bang chu cai(A-Z)</option>
+            <option>Noi bat</option>
+            <option>Noi bat</option>
+          </select>
+        </div>
+        <div class="productlist1">
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
           </div>
-          <div class="productlist1">
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="productlist1">
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="productlist1">
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+          <div class="productlist1child">
+            <img src="/petshop-web/frontend/resources/image/test.webp" />
+            <div>
+              <p>🚗 Phương Tiện: Xe Khách</p>
+              <p>📅 Lịch: Tháng 6</p>
+              <p style="color: crimson; font-weight: bold">
+                💰 Giá từ: 2,500,000 đ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="productlist1child">
-        <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-  </div>
-          <div class="productlist1">
-    <div class="productlist1child">
-       <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-  </div>
-  <div class="productlist1">
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-    <div class="productlist1child">
- <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-    <div class="productlist1child">
-    <img src="/petshop-web/frontend/resources/image/test.webp"/>
- <div>
-    <p>🚗 Phương Tiện: Xe Khách</p>
-    <p>📅 Lịch: Tháng 6</p>
-    <p style="color: crimson; font-weight: bold;">💰 Giá từ: 2,500,000 đ</p>
- </div>
-    </div>
-  </div>
-       </div>
-  </div>
-    
-  
 
-   <div class="Content">
+    <div class="Content">
       <h2>Hàng Mới Về</h2>
-      <h2>Paddy | Cơn lốc HÀNG MỚI mỗi ngày, thỏa mãn mọi nhu cầu của "hoàng thượng" và "boss"!</h2>
-      <p>Tại Paddy, bạn sẽ được đắm chìm trong thế giới HÀNG MỚI với hơn 200 sản phẩm cập nhật mỗi ngày, thuộc các danh mục đa dạng:</p>
-      <ul><a href="#">1. Thức ăn cho mèo và Thức ăn cho chó : </a> 
+      <h2>
+        Paddy | Cơn lốc HÀNG MỚI mỗi ngày, thỏa mãn mọi nhu cầu của "hoàng
+        thượng" và "boss"!
+      </h2>
+      <p>
+        Tại Paddy, bạn sẽ được đắm chìm trong thế giới HÀNG MỚI với hơn 200 sản
+        phẩm cập nhật mỗi ngày, thuộc các danh mục đa dạng:
+      </p>
+      <ul>
+        <a href="#">1. Thức ăn cho mèo và Thức ăn cho chó : </a>
         <li>
-        Đáp ứng mọi nhu cầu dinh dưỡng cho thú cưng ở mọi độ tuổi và giai đoạn phát triển với các loại thức ăn khô, thức ăn ướt, pate, snack  snack từ các thương hiệu uy tín hàng đầu như  Royal Canin, Whiskas, Purina, Me-O, ... Khám phá thế giới ẩm thực phong phú với đa dạng hương vị, kích thích vị giác của "hoàng thượng" và "boss" kể cả những bé ăn dặm hay kén ăn.
+          Đáp ứng mọi nhu cầu dinh dưỡng cho thú cưng ở mọi độ tuổi và giai đoạn
+          phát triển với các loại thức ăn khô, thức ăn ướt, pate, snack snack từ
+          các thương hiệu uy tín hàng đầu như Royal Canin, Whiskas, Purina,
+          Me-O, ... Khám phá thế giới ẩm thực phong phú với đa dạng hương vị,
+          kích thích vị giác của "hoàng thượng" và "boss" kể cả những bé ăn dặm
+          hay kén ăn.
         </li>
       </ul>
-      <ul ><a href="#">2. Phụ kiện cho chó mèo </a> 
-        <li>Luôn cập nhật những phụ kiện mới nhất, thời trang nhất và tiện lợi nhất cho "hoàng thượng" và "boss" như dây dắt, rọ mõm, chén ăn, ổ nệm, đồ chơi, balo mèo, ... từ các thương hiệu nổi tiếng như PetKit , Fofos , ... giúp bạn chăm sóc thú cưng một cách toàn diện và theo trend.</li>
-        <li>Balo mèo thời thượng, giúp bạn mang theo "hoàng thượng" đi dạo, đi chơi hay du lịch một cách an toàn và thoải mái.</li>
-        <li>Đồ chơi đa dạng, kích thích trí thông minh và sự phát triển vận động của "hoàng thượng" và "boss".</li>
+      <ul>
+        <a href="#">2. Phụ kiện cho chó mèo </a>
+        <li>
+          Luôn cập nhật những phụ kiện mới nhất, thời trang nhất và tiện lợi
+          nhất cho "hoàng thượng" và "boss" như dây dắt, rọ mõm, chén ăn, ổ nệm,
+          đồ chơi, balo mèo, ... từ các thương hiệu nổi tiếng như PetKit , Fofos
+          , ... giúp bạn chăm sóc thú cưng một cách toàn diện và theo trend.
+        </li>
+        <li>
+          Balo mèo thời thượng, giúp bạn mang theo "hoàng thượng" đi dạo, đi
+          chơi hay du lịch một cách an toàn và thoải mái.
+        </li>
+        <li>
+          Đồ chơi đa dạng, kích thích trí thông minh và sự phát triển vận động
+          của "hoàng thượng" và "boss".
+        </li>
       </ul>
-      <ul><a href="#">3. Sữa Tắm & Phụ Kiện Tắm Cho Chó</a> 
-        <li>Mang đến cho bạn đa dạng các loại cát vệ sinh mới với khả năng khử mùi tốt, thấm hút hiệu quả, giúp bạn giữ cho nhà cửa luôn sạch sẽ, thơm tho và hợp vệ sinh như cát vệ sinh bentonite, cát vệ sinh silica, cát vệ sinh than hoạt tính, ... từ các thương hiệu uy tín như Sanicat , Hysen Clean ...</li>
-        <li>Cung cấp các loại sữa tắm, dầu xả, nước hoa, ... giúp "hoàng thượng" và "boss" luôn được vệ sinh sạch sẽ và thơm tho, tự tin tỏa sáng như sữa tắm  dầu xả Tropiclean, ...</li>
+      <ul>
+        <a href="#">3. Sữa Tắm & Phụ Kiện Tắm Cho Chó</a>
+        <li>
+          Mang đến cho bạn đa dạng các loại cát vệ sinh mới với khả năng khử mùi
+          tốt, thấm hút hiệu quả, giúp bạn giữ cho nhà cửa luôn sạch sẽ, thơm
+          tho và hợp vệ sinh như cát vệ sinh bentonite, cát vệ sinh silica, cát
+          vệ sinh than hoạt tính, ... từ các thương hiệu uy tín như Sanicat ,
+          Hysen Clean ...
+        </li>
+        <li>
+          Cung cấp các loại sữa tắm, dầu xả, nước hoa, ... giúp "hoàng thượng"
+          và "boss" luôn được vệ sinh sạch sẽ và thơm tho, tự tin tỏa sáng như
+          sữa tắm dầu xả Tropiclean, ...
+        </li>
       </ul>
-      <ul><a href="#">4. Thực phẩm chức năng cho chó mèo</a> 
-       <li>Bổ sung vitamin, khoáng chất và các dưỡng chất cần thiết giúp tăng cường sức khỏe, hệ miễn dịch và sự phát triển toàn diện cho "hoàng thượng" và "boss" như vitamin Gimcat , Viên NOURSE Bổ Sung Vitamin & Tiêu Búi Lông Mèo , ..., viên hỗ trợ tiêu hóa Probiotics, ...</li>
-       <li>Hỗ trợ tiêu hóa, đẹp da, sáng lông, tăng cường sức đề kháng, giúp "hoàng thượng" và "boss" luôn khỏe mạnh và tràn đầy năng lượng.</li>
+      <ul>
+        <a href="#">4. Thực phẩm chức năng cho chó mèo</a>
+        <li>
+          Bổ sung vitamin, khoáng chất và các dưỡng chất cần thiết giúp tăng
+          cường sức khỏe, hệ miễn dịch và sự phát triển toàn diện cho "hoàng
+          thượng" và "boss" như vitamin Gimcat , Viên NOURSE Bổ Sung Vitamin &
+          Tiêu Búi Lông Mèo , ..., viên hỗ trợ tiêu hóa Probiotics, ...
+        </li>
+        <li>
+          Hỗ trợ tiêu hóa, đẹp da, sáng lông, tăng cường sức đề kháng, giúp
+          "hoàng thượng" và "boss" luôn khỏe mạnh và tràn đầy năng lượng.
+        </li>
       </ul>
-      <ul><a href="#">5. Chuồng lồng cho chó mèo</a> 
-        <li>Cung cấp nhiều mẫu chuồng lồng đa dạng, tiện lợi và an toàn cho "hoàng thượng" và "boss" như chuồng lồng sắt, chuồng lồng nhựa, chuồng lồng xếp gọn, với thiết kế hiện đại, sang trọng, phù hợp với mọi không gian trong nhà và từ chất liệu cao cấp, đảm bảo độ bền bỉ và an toàn cho thú cưng.</li>
+      <ul>
+        <a href="#">5. Chuồng lồng cho chó mèo</a>
+        <li>
+          Cung cấp nhiều mẫu chuồng lồng đa dạng, tiện lợi và an toàn cho "hoàng
+          thượng" và "boss" như chuồng lồng sắt, chuồng lồng nhựa, chuồng lồng
+          xếp gọn, với thiết kế hiện đại, sang trọng, phù hợp với mọi không gian
+          trong nhà và từ chất liệu cao cấp, đảm bảo độ bền bỉ và an toàn cho
+          thú cưng.
+        </li>
       </ul>
       <p>
-      Khám phá thế giới sản phẩm mới mẻ dành riêng cho "hoàng thượng" và "boss" của bạn! Và bạn là một "con sen" đích thực? Bạn muốn dành những điều tốt đẹp nhất cho "hoàng thượng" và "boss" của mình? Vậy thì Paddy chính là điểm đến lý tưởng dành cho bạn!
+        Khám phá thế giới sản phẩm mới mẻ dành riêng cho "hoàng thượng" và
+        "boss" của bạn! Và bạn là một "con sen" đích thực? Bạn muốn dành những
+        điều tốt đẹp nhất cho "hoàng thượng" và "boss" của mình? Vậy thì Paddy
+        chính là điểm đến lý tưởng dành cho bạn!
       </p>
-   </div>
-
-   <footer class="foot">
-    <div class="footchild">
-             <h2>Thành viên Paddiers</h2>
-       <p>Đăng ký thành viên ngay hôm nay để nhận email về sản phẩm mới và chương trình khuyến mãi của Paddy</p>
-       <div class="footchild1">
-        <input type="text" placeholder="Email của bạn..." />
-        <button type="submit">Đăng Ký</button>
-     </div>
     </div>
-     <div class="fulldvu">
-      <div class="fulldvuchild">
-         <b>Shop</b>
-         <a href="#">Dành Cho Chó</a>
-         <a href="#">Dành Cho Mèo</a>
-         <a href="#">Thương Hiệu</a>
-         <a href="#">Blogs</a>
-         <a href="#">Bộ Sưu Tập</a>
-      </div>
-      <div class="fulldvuchild">
-         <b>Paddy Pet Shop</b>
-         <a href="#">Giới Thiệu</a>
-         <a href="#">Thành Viên Paddier</a>
-         <a href="#">Điều Khoản Sử Dụng</a>
-         <a href="#">Tuyển Dụng</a>
 
+    <footer class="foot">
+      <div class="footchild">
+        <h2>Thành viên Paddiers</h2>
+        <p>
+          Đăng ký thành viên ngay hôm nay để nhận email về sản phẩm mới và
+          chương trình khuyến mãi của Paddy
+        </p>
+        <div class="footchild1">
+          <input type="text" placeholder="Email của bạn..." />
+          <button type="submit">Đăng Ký</button>
+        </div>
       </div>
-      <div class="fulldvuchild">
-         <b>Hỗ Trợ Khách Hàng</b>
-         <a href="#">Chính Sách Đổi Trả Hàng</a>
-         <a href="#">Phương Thức Vận Chuyển</a>
-         <a href="#">Chính Sách Bảo Mật</a>
-         <a href="#">Phương Thức Thanh Toán</a>
-         <a href="#">Chính Sách Hoàn Tiền</a>
+      <div class="fulldvu">
+        <div class="fulldvuchild">
+          <b>Shop</b>
+          <a href="#">Dành Cho Chó</a>
+          <a href="#">Dành Cho Mèo</a>
+          <a href="#">Thương Hiệu</a>
+          <a href="#">Blogs</a>
+          <a href="#">Bộ Sưu Tập</a>
+        </div>
+        <div class="fulldvuchild">
+          <b>Paddy Pet Shop</b>
+          <a href="#">Giới Thiệu</a>
+          <a href="#">Thành Viên Paddier</a>
+          <a href="#">Điều Khoản Sử Dụng</a>
+          <a href="#">Tuyển Dụng</a>
+        </div>
+        <div class="fulldvuchild">
+          <b>Hỗ Trợ Khách Hàng</b>
+          <a href="#">Chính Sách Đổi Trả Hàng</a>
+          <a href="#">Phương Thức Vận Chuyển</a>
+          <a href="#">Chính Sách Bảo Mật</a>
+          <a href="#">Phương Thức Thanh Toán</a>
+          <a href="#">Chính Sách Hoàn Tiền</a>
+        </div>
+        <div class="fulldvuchild">
+          <b>Liên Hệ</b>
+          <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI & DỊCH VỤ PADDY</p>
+          <p>MST: 0316459054</p>
+          <p>
+            116 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh,
+            Việt Nam
+          </p>
+          <p>Hotline: 0867677891</p>
+          <p>Email: contact@paddy.vn</p>
+        </div>
       </div>
-      <div class="fulldvuchild">
-         <b>Liên Hệ</b>
-         <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI & DỊCH VỤ PADDY</p>
-         <p>MST: 0316459054</p>
-         <p>116 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</p>
-         <p> Hotline: 0867677891</p>
-         <p> Email: contact@paddy.vn</p>
-      </div>
-     </div>
-   </footer>
+    </footer>
   </body>
 </html>
