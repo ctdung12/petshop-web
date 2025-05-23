@@ -36,6 +36,9 @@ public class Product {
     @Column(name = "classify_under", nullable = true, length = 40)
     private String ClassifyUnder;
 
+    @Column(name = "classify_under2", nullable = true, length = 30)
+    private String ClassifyUnder2;
+
     @Column(name = "date_add", nullable = false)
     @CreationTimestamp
     private LocalDateTime DateAdd;
@@ -105,6 +108,14 @@ public class Product {
 
     public void setClassifyUnder(String ClassifyUnder) {
         this.ClassifyUnder = ClassifyUnder;
+    }
+
+    public String getClassifyUnder2() {
+        return ClassifyUnder2;
+    }
+
+    public void setClassifyUnder2(String ClassifyUnder2) {
+        this.ClassifyUnder2 = ClassifyUnder2;
     }
 
     public LocalDateTime getDateAdd() {
