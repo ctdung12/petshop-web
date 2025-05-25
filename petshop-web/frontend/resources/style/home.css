@@ -32,15 +32,6 @@
     border: 0px;
 }
 
-.hotline {
-    text-align: center;
-    font-weight: bolder;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
 
 .cacdvukhac {
     text-align: center;

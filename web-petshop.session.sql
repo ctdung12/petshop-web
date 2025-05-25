@@ -1,2 +1,3 @@
-SELECT *
-FROM user_user;
+SELECT
+FROM product
+WHERE classify = 'D01';

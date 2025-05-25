@@ -24,22 +24,17 @@
             />
           </button>
         </div>
-
         <div class="cacdvukhac">
-          <!-- <a href="wishlist.html">
-            <img src="/petshop-web/frontend/resources/image/love.png" />
-            <p>Wishlist</p>
-          </a> -->
           <button class="btn" onclick="clickbtn()">
             <img src="/petshop-web/frontend/resources/image/love.png" />
             <p>Wishlist</p>
           </button>
-          <script src="/petshop-web/frontend/resources/script/home.js"></script>
+          <!-- <script src="/petshop-web/frontend/resources/script/home.js"></script>
           <div id="login-overlap" class="login-overlap hidden">
             <div id="loginform" class="login-form">
               <div class="login-content">
                 <span class="close-btn" onclick="clickbtn()">×</span>
-                <h3>Wishlist</h3>
+                <h3>Đăng Nhập</h3>
                 <input type="email" placeholder="Email" required />
                 <input type="password" placeholder="Mật khẩu" required />
                 <button>Đăng Nhập</button>
@@ -47,7 +42,7 @@
                 <button class="register-btn">Tạo Tài Khoản</button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="cacdvukhac">
           <button class="btn" onclick="clickbtn()">
@@ -64,17 +59,39 @@
                 <input type="password" placeholder="Mật khẩu" required />
                 <button>Đăng Nhập</button>
                 <a href="#">Quên mật khẩu?</a>
-                <button class="register-btn">Tạo Tài Khoản</button>
+                <button onclick="clickbtn2()" class="register-btn">
+                  Tạo tài khoản mới
+                </button>
+                <div id="creatform" class="creatform hidden">
+                  <div class="creat-content">
+                    <span class="close" onclick="clickbtn2()">×</span>
+                    <h3>Tạo tài khoản mới</h3>
+                    <input type="text" placeholder="Tên người dùng" required />
+                    <input
+                      type="email"
+                      placeholder="Email đăng nhập"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Mật khẩu"
+                      required
+                    />
+                    <button>Quay lại trang đang nhập</button>
+                    <button>Xác nhận</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="cacdvukhac">
-          <!-- <a href="cart.html">
+          <a href="cart.html">
             <img src="/petshop-web/frontend/resources/image/cart.png" />
             <p>Giỏ Hàng</p>
-          </a> -->
-          <button class="btn" onclick="clickbtn()">
+          </a>
+          <!-- <button class="btn" onclick="clickbtn()">
             <img src="/petshop-web/frontend/resources/image/cart.png" alt="*" />
             <p>Giỏ hàng</p>
           </button>
@@ -91,14 +108,14 @@
                 <button class="register-btn">Tạo Tài Khoản</button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <nav class="menu">
         <ul>
           <li>
-            <a href="">Chó</a>
+            <a href="/petshop-web/frontend/view/dog/dog.html">Chó</a>
             <div class="divmenu">
               <p>Chăm sóc vệ sinh cún</p>
               <p>Thức ăn cho chó</p>

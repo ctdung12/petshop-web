@@ -18,6 +18,6 @@ public class ProductDogController {
 
     @GetMapping
     public List<Product> getAllProduct() {
-        return productRP.seasearchByClassifyD01(null);
+        return productRP.seasearchByClassifyD01();
     }
 }
