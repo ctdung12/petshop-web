@@ -19,8 +19,44 @@ fetch("http://localhost:8080/api/home")
             console.error("Loi", error);
 });
 
-fetch("http://localhost:8080/api/user")
-    .then((Response) => Response.json())
-    .then((data) => {
-        
+function sendOtp() {
+    const email = document.getElementById("email").value;
+    const btn = document.getElementById("sendOtpBtn");
+
+    fetch("http://localhost:8080/api/otp/send",{
+        method: "POST",
+        headers: { "Content-Type": "application/json"},
+        body: JSON.stringify({email: email})
     })
+    .then(res => res.text())
+    .then(msg => {
+        alert(msg);
+                btn.disabled = true;
+                let countdown = 60;
+                const interval = setInterval(() => {
+                    countdown--;
+                    if (countdown <= 0) {
+                        clearInterval(interval);
+                        btn.disabled = false;                     
+                    }
+                }, 1000);
+    })
+    .catch(err => console.error("Loi",err));
+}
+
+function restOtp() {
+    const email = document.getElementById("email").value;
+    const code = document.getElementById("otp").value;
+
+    fetch("http://localhost:8080/api/otp/rest",{
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({email:email, code: code})
+    })
+    .then(res => {
+        if(res.ok) return res.text();
+        else throw new Error("Mã sai hoặc hết hạn.");
+    })
+    .then(msg => alert(msg))
+    .catch(err => alert(err.message))
+}

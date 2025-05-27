@@ -69,7 +69,7 @@
                   placeholder="Tên đăng nhập"
                   required
                 />
-                <input type="email" placeholder="Email" required />
+                <input id="email" type="email" placeholder="Email" required />
                 <input type="text" placeholder="Mật khẩu" required />
                 <input
                   name="password"
@@ -77,6 +77,12 @@
                   placeholder="Nhập lại mật khẩu"
                   required
                 />
+                <div class="form-otp">
+                  <input type="text" placeholder="OTP" />
+                  <button id="sendOtpBtn" onclick="sendOtp()" class="submit">
+                    Gửi mã OTP
+                  </button>
+                </div>
                 <button class="submit">Đăng ký</button>
                 <button onclick="showLoginForm()" class="register-btn">
                   Quay lại đăng nhập

@@ -445,6 +445,12 @@
   .hidden {
     display: none;
   }
+  .form-otp {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    white-space: nowrap;
+  }
   @keyframes fadeSlideIn {
     from {
       opacity: 0;
