@@ -366,8 +366,12 @@
     text-decoration: underline  ;
     color: rgb(7, 79, 234);
 }
-
-
+#producthome {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 25px;
+    padding: 10px;
+}
 /*Login*/
 
 
@@ -385,22 +389,25 @@
   
   .login-form.active {
     right: 0;
+    animation: fadeSlideIn 0.5s ease;
   }
-  
   .login-content {
-    padding: 30px;
+    padding: 60px 30px;
     display: flex;
     flex-direction: column;
   }
   .login-content h3 {
-    padding: 10px;
-
+    padding: 20px;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
   }
   .login-content input {
     margin-bottom: 15px;
     padding: 10px;
     width: 100%;
     border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
   }
   
   .login-content button {
@@ -410,12 +417,41 @@
   
   .register-btn {
     background-color: orange;
-    color: #fff;
+    color: #1b1266;
     border: none;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
   }
-  
+  .submit {
+    border: none;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+  }
+  .submit:hover {
+    transform: translateY(-2px); 
+    transition: transform 0.2s ease;
+  }
+  .register-btn:hover {
+    transform: translateY(-2px); 
+    transition: transform 0.2s ease;
+  }
   .close-btn {
     font-size: 24px;
     cursor: pointer;
     align-self: flex-end;
+  }
+  .hidden {
+    display: none;
+  }
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }

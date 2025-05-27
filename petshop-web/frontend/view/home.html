@@ -29,59 +29,58 @@
             <img src="/petshop-web/frontend/resources/image/love.png" />
             <p>Wishlist</p>
           </button>
-          <!-- <script src="/petshop-web/frontend/resources/script/home.js"></script>
-          <div id="login-overlap" class="login-overlap hidden">
-            <div id="loginform" class="login-form">
-              <div class="login-content">
-                <span class="close-btn" onclick="clickbtn()">×</span>
-                <h3>Đăng Nhập</h3>
-                <input type="email" placeholder="Email" required />
-                <input type="password" placeholder="Mật khẩu" required />
-                <button>Đăng Nhập</button>
-                <a href="#">Quên mật khẩu?</a>
-                <button class="register-btn">Tạo Tài Khoản</button>
-              </div>
-            </div>
-          </div> -->
         </div>
         <div class="cacdvukhac">
           <button class="btn" onclick="clickbtn()">
             <img src="/petshop-web/frontend/resources/image/account.png" />
             <p>Đăng nhập</p>
           </button>
-          <script src="/petshop-web/frontend/resources/script/home.js"></script>
           <div id="login-overlap" class="login-overlap hidden">
             <div id="loginform" class="login-form">
               <div class="login-content">
-                <span class="close-btn" onclick="clickbtn()">×</span>
+                <span class="close-btn" onclick="clickbtn()"
+                  ><img
+                    src="/petshop-web/frontend/resources/image/icons8-close-96.png"
+                    alt="*"
+                /></span>
                 <h3>Đăng Nhập</h3>
                 <input type="email" placeholder="Email" required />
                 <input type="password" placeholder="Mật khẩu" required />
-                <button>Đăng Nhập</button>
+                <button class="submit">Đăng Nhập</button>
                 <a href="#">Quên mật khẩu?</a>
-                <button onclick="clickbtn2()" class="register-btn">
+                <button onclick="showCreatForm()" class="register-btn">
                   Tạo tài khoản mới
                 </button>
-                <div id="creatform" class="creatform hidden">
-                  <div class="creat-content">
-                    <span class="close" onclick="clickbtn2()">×</span>
-                    <h3>Tạo tài khoản mới</h3>
-                    <input type="text" placeholder="Tên người dùng" required />
-                    <input
-                      type="email"
-                      placeholder="Email đăng nhập"
-                      required
-                    />
-                    <input
-                      type="text"
-                      name=""
-                      placeholder="Mật khẩu"
-                      required
-                    />
-                    <button>Quay lại trang đang nhập</button>
-                    <button>Xác nhận</button>
-                  </div>
-                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div id="creatform" class="login-form hidden">
+              <div class="login-content">
+                <span class="close-btn" onclick="clickbtn()"
+                  ><img
+                    src="/petshop-web/frontend/resources/image/icons8-close-96.png"
+                    alt="*"
+                /></span>
+                <h3>Đăng ký</h3>
+                <input name="name" type="text" placeholder="Họ tên" required />
+                <input
+                  name="user-name"
+                  type="text"
+                  placeholder="Tên đăng nhập"
+                  required
+                />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Mật khẩu" required />
+                <input
+                  name="password"
+                  type="text"
+                  placeholder="Nhập lại mật khẩu"
+                  required
+                />
+                <button class="submit">Đăng ký</button>
+                <button onclick="showLoginForm()" class="register-btn">
+                  Quay lại đăng nhập
+                </button>
               </div>
             </div>
           </div>
@@ -91,24 +90,6 @@
             <img src="/petshop-web/frontend/resources/image/cart.png" />
             <p>Giỏ Hàng</p>
           </a>
-          <!-- <button class="btn" onclick="clickbtn()">
-            <img src="/petshop-web/frontend/resources/image/cart.png" alt="*" />
-            <p>Giỏ hàng</p>
-          </button>
-          <script src="/petshop-web/frontend/resources/script/home.js"></script>
-          <div id="login-overlap" class="login-overlap hidden">
-            <div id="loginform" class="login-form">
-              <div class="login-content">
-                <span class="close-btn" onclick="clickbtn()">×</span>
-                <h3>Đăng Nhập</h3>
-                <input type="email" placeholder="Email" required />
-                <input type="password" placeholder="Mật khẩu" required />
-                <button>Đăng Nhập</button>
-                <a href="#">Quên mật khẩu?</a>
-                <button class="register-btn">Tạo Tài Khoản</button>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
 
@@ -168,129 +149,13 @@
             <option>Noi bat</option>
           </select>
         </div>
-        <div class="productlist1">
-          <div class="productlist1child">
+        <div id="producthome" class="productlist1">
+          <div style="display: none" id="product" class="productlist1child">
             <img src="/petshop-web/frontend/resources/image/test.webp" />
             <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="productlist1">
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="productlist1">
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
-            </div>
-          </div>
-          <div class="productlist1child">
-            <img src="/petshop-web/frontend/resources/image/test.webp" />
-            <div>
-              <p>🚗 Phương Tiện: Xe Khách</p>
-              <p>📅 Lịch: Tháng 6</p>
-              <p style="color: crimson; font-weight: bold">
-                💰 Giá từ: 2,500,000 đ
-              </p>
+              <p class="name"></p>
+              <p class="brand"></p>
+              <p class="price" style="color: crimson; font-weight: bold"></p>
             </div>
           </div>
         </div>
@@ -430,5 +295,7 @@
         </div>
       </div>
     </footer>
+    <script src="/petshop-web/frontend/resources/script/homescript.js"></script>
+    <script src="/petshop-web/frontend/resources/script/home.js"></script>
   </body>
 </html>

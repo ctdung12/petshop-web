@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.petshop_web.entity.Product;
-import com.example.petshop_web.repository.ProductDogRP;
+import com.example.petshop_web.service.ProductDogService;
 
 @RestController
 @RequestMapping("api/product-dog")
 public class ProductDogController {
     @Autowired
-    private ProductDogRP productRP;
+    private ProductDogService productDogService;
 
     @GetMapping
     public List<Product> getAllProduct() {
-        return productRP.seasearchByClassifyD01();
+        return productDogService.seasearchByClassifyD01();
     }
 }

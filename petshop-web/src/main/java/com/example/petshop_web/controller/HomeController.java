@@ -1,8 +1,13 @@
 package com.example.petshop_web.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.petshop_web.service.ProductHomeService;
+import com.example.petshop_web.entity.*;
 
 import java.util.List;
 
@@ -10,8 +15,13 @@ import java.util.List;
 @RequestMapping("/api/home")
 
 public class HomeController {
+    @Autowired
+    private ProductHomeService productHomeService;
+
     @GetMapping
-    public List<String> getUser() {
-        return List.of("1", "2", "3");
+    public List<Product> getAllProduct() {
+        return productHomeService.getAllProduct();
     }
+    // @PostMapping
+    // public List<User>
 }
